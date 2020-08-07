@@ -12,6 +12,7 @@ from django.db.models import Q
 from django.core.mail import send_mail
 from django.conf import settings
 
+
 @login_required
 def index(request):
     return HttpResponse('Примитивный ответ из приложения tasks')
