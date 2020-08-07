@@ -25,7 +25,7 @@ SECRET_KEY = '&48suuu(==fbz47czy9#1!15^^ja!x(($eg(fq2tb&)%&(uc0!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['www.dry-mountain-74468.herokuapp.com', 'dry-mountain-74468.herokuapp.com']
 
 
 # Application definition
