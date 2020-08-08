@@ -20,10 +20,11 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+    path('', include('django.contrib.auth.urls')),
     path('send/', include('send.urls', namespace='send')),
     path('accounts/', include('accounts.urls', namespace='accounts')),
     path('tasks/', include('tasks.urls', namespace='tasks')),
     path('admin/', admin.site.urls),
 ]
 
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
